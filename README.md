@@ -11,6 +11,7 @@ Gerador de currículos com pandoc
 
 ```sh
 git clone https://github.com/sup4man12/curriculo_pandoc.git
+cd curriculo_pandoc
 chmod +x curriculo.sh
 ```
 
@@ -30,3 +31,19 @@ Edite o arquivo **curriculo.md** e gere o pdf com o seguinte comando:
 ```
 
 Os currículos ficaram localizados no diretório **output**
+
+## Estrutura de arquivos
+
+```
+curriculo/
+├── css/
+│   ├── curriculo.css  (padrão)
+│   ├── clean.css
+│   ├── modern.css
+│   ├── classic.css
+│   └── dark.css
+├── curriculo.md
+├── curriculo.sh
+└── output/
+    └── curriculo-*.pdf
+```

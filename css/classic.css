@@ -17,7 +17,6 @@
     margin-right: 0.2em;
 }
 
-/* Paleta Clássica e Profissional */
 :root {
   --navy: #1a365d;
   --navy-light: #2c5282;
@@ -34,7 +33,6 @@ body {
   font-size: 11pt;
 }
 
-/* Headings clássicos */
 h1, h2, h3 {
   font-weight: 600;
   margin-top: 0.5em;
@@ -84,7 +82,6 @@ li {
   margin: 0.3em 0;
 }
 
-/* Bloco de contatos clássico */
 blockquote {
   padding: 10px 20px;
   margin: 0.4em 0 1.2em 0;
@@ -110,7 +107,6 @@ section {
   margin-bottom: 1em;
 }
 
-/* Layout de duas colunas na seção Formação */
 .formacao-wrapper {
   display: flex;
   justify-content: space-between;

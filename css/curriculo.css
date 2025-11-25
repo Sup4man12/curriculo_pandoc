@@ -1,5 +1,5 @@
 @page {
-  margin: 1.6cm;   /* antes era 2.5cm */
+  margin: 1.6cm;
 }
 
 @font-face {
@@ -15,23 +15,21 @@
     vertical-align: middle;
     margin-right: 0.2em;
 }
-/* Paleta */
 :root {
   --accent: #3a6ea5;
   --accent-light: #e8f0fa;
   --dark: #1f2a35;
 }
 
-/* Headings com menos espaço */
 h1, h2, h3 {
   font-weight: 600;
-  margin-top: 0.8em;   /* antes 1.4em */
+  margin-top: 0.8em;
   margin-bottom: 0.25em;
   letter-spacing: 0.2px;
 }
 
 h1 {
-  font-size: 22pt;   /* antes 26pt */
+  font-size: 22pt; 
   text-transform: uppercase;
   border-bottom: 2px solid var(--accent);
   padding-bottom: 4px;
@@ -39,17 +37,17 @@ h1 {
 }
 
 h2 {
-  font-size: 15.5pt;   /* antes 18pt */
+  font-size: 15.5pt;
   color: var(--accent);
 }
 
 h3 {
-  font-size: 13pt;   /* antes 14pt */
+  font-size: 13pt; 
   color: #333;
 }
 
 p, li {
-  margin: 0.18em 0;     /* reduz o espaço entre itens */
+  margin: 0.18em 0;
 }
 
 ul {
@@ -57,8 +55,6 @@ ul {
   margin-top: 0.2em;
 }
 
-/* Bloco de contatos: texto normal, quebras de linha, sem sublinhado */
-/* Bloco de contatos: texto normal, quebras de linha, sem sublinhado */
 blockquote {
   padding: 5px 10px;
   margin: 0.4em 0 0.8em 0;
@@ -74,11 +70,9 @@ blockquote a {
     display: inline;
 }
 
-/* Seções mais compactas */
 section {
   margin-bottom: 0.8em;
 }
-/* Layout de duas colunas na seção Formação */
 .formacao-wrapper {
   display: flex;
   justify-content: space-between;
@@ -91,5 +85,5 @@ section {
 }
 
 .formacao-col h3 {
-  margin-top: 0; /* evita espaço sobrando no topo */
+  margin-top: 0;
 }

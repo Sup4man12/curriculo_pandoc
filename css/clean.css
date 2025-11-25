@@ -17,7 +17,6 @@
     margin-right: 0.2em;
 }
 
-/* Paleta Minimalista */
 :root {
   --text: #2c3e50;
   --text-light: #7f8c8d;
@@ -32,7 +31,6 @@ body {
   font-size: 11pt;
 }
 
-/* Headings minimalistas */
 h1, h2, h3 {
   font-weight: 300;
   margin-top: 1em;
@@ -78,7 +76,6 @@ li {
   list-style-type: circle;
 }
 
-/* Bloco de contatos minimalista */
 blockquote {
   padding: 8px 15px;
   margin: 0.5em 0 1em 0;
@@ -103,7 +100,6 @@ section {
   margin-bottom: 1.2em;
 }
 
-/* Layout de duas colunas na seção Formação */
 .formacao-wrapper {
   display: flex;
   justify-content: space-between;
