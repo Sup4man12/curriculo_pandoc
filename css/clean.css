@@ -1,0 +1,126 @@
+@page {
+  margin: 1cm;
+}
+
+@font-face {
+    font-family: 'NerdFont';
+    src: url('fonts/NerdFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.icon {
+    font-family: 'NerdFont';
+    font-size: 10pt;
+    vertical-align: middle;
+    margin-right: 0.2em;
+}
+
+/* Paleta Minimalista */
+:root {
+  --text: #2c3e50;
+  --text-light: #7f8c8d;
+  --border: #ecf0f1;
+  --bg-light: #fafafa;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 11pt;
+}
+
+/* Headings minimalistas */
+h1, h2, h3 {
+  font-weight: 300;
+  margin-top: 1em;
+  margin-bottom: 0.4em;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 28pt;
+  text-transform: none;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+  color: var(--text);
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 16pt;
+  color: var(--text);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 1em;
+}
+
+h3 {
+  font-size: 13pt;
+  color: var(--text-light);
+  font-weight: 400;
+}
+
+p, li {
+  margin: 0.3em 0;
+  color: var(--text);
+}
+
+ul {
+  padding-left: 20px;
+  margin-top: 0.4em;
+}
+
+li {
+  list-style-type: circle;
+}
+
+/* Bloco de contatos minimalista */
+blockquote {
+  padding: 8px 15px;
+  margin: 0.5em 0 1em 0;
+  border-left: 2px solid var(--border);
+  background: var(--bg-light);
+  font-size: 10pt;
+  line-height: 1.6;
+  color: var(--text-light);
+}
+
+blockquote a {
+    color: var(--text);
+    text-decoration: none;
+    display: inline;
+}
+
+blockquote a:hover {
+    text-decoration: underline;
+}
+
+section {
+  margin-bottom: 1.2em;
+}
+
+/* Layout de duas colunas na seção Formação */
+.formacao-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 2cm;
+  margin-top: 0.6em;
+}
+
+.formacao-col {
+  flex: 1;
+}
+
+.formacao-col h3 {
+  margin-top: 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 1.5em 0;
+}
