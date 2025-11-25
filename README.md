@@ -1,8 +1,8 @@
 # curriculo_pandoc
 
-gerador de de cúrriculos com pandoc
+Gerador de currículos com pandoc
 
-## Depedências
+## Dependências
 
 - pandoc
 - weasyprint
@@ -16,17 +16,17 @@ chmod +x curriculo.sh
 
 ## Como usar
 
-edite o arquivo **curriculo.md** e gere o pdf com o seguinte comando:
+Edite o arquivo **curriculo.md** e gere o pdf com o seguinte comando:
 
 ```sh
 ./curriculo.sh
 
-## Também é possível passar algum tema como parametro.
-## Temas dísponiveis: dark, clean, dark, modern e curriculo(padrão)
+## Também é possível passar algum tema como parâmetro.
+## Temas disponíveis: dark, clean, dark, modern e curriculo(padrão)
 ./curriculo.sh clean
 
 ## Ou ainda, gerar todos
 ./curriculo.sh all
 ```
 
-Os cúrriculos ficaram localizados no diretório **output**
+Os currículos ficaram localizados no diretório **output**
