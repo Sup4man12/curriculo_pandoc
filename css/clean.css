@@ -100,21 +100,6 @@ section {
   margin-bottom: 1.2em;
 }
 
-.formacao-wrapper {
-  display: flex;
-  justify-content: space-between;
-  gap: 2cm;
-  margin-top: 0.6em;
-}
-
-.formacao-col {
-  flex: 1;
-}
-
-.formacao-col h3 {
-  margin-top: 0;
-}
-
 hr {
   border: none;
   border-top: 1px solid var(--border);

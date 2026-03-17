@@ -116,26 +116,6 @@ section {
   border: 1px solid var(--border);
 }
 
-.formacao-wrapper {
-  display: flex;
-  justify-content: space-between;
-  gap: 1.2cm;
-  margin-top: 0.5em;
-}
-
-.formacao-col {
-  flex: 1;
-  background: var(--bg-dark);
-  padding: 12px;
-  border-radius: 4px;
-  border: 1px solid var(--border);
-}
-
-.formacao-col h3 {
-  margin-top: 0;
-  color: var(--accent);
-}
-
 hr {
   border: none;
   border-top: 1px solid var(--border);

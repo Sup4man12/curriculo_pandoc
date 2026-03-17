@@ -73,17 +73,3 @@ blockquote a {
 section {
   margin-bottom: 0.8em;
 }
-.formacao-wrapper {
-  display: flex;
-  justify-content: space-between;
-  gap: 1.2cm;
-  margin-top: 0.4em;
-}
-
-.formacao-col {
-  flex: 1;
-}
-
-.formacao-col h3 {
-  margin-top: 0;
-}

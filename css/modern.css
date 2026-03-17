@@ -127,27 +127,6 @@ section {
   margin-bottom: 1.2em;
 }
 
-/* Layout de duas colunas na seção Formação */
-.formacao-wrapper {
-  display: flex;
-  justify-content: space-between;
-  gap: 1.5cm;
-  margin-top: 0.6em;
-}
-
-.formacao-col {
-  flex: 1;
-  background: var(--light);
-  padding: 15px;
-  border-radius: 8px;
-  border: 1px solid #e2e8f0;
-}
-
-.formacao-col h3 {
-  margin-top: 0;
-  color: var(--primary);
-}
-
 hr {
   border: none;
   height: 2px;

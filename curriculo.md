@@ -24,9 +24,7 @@ Programador com experiência em ambientes Linux, servidores e desenvolvimento de
 **Cursando faculdade ADS (2026)**  
 Cruzeiro do Sul EAD
 
-</div>
-
-<div class="formacao-col">
+---
 
 ### Cursos Complementares
 - Java  
@@ -35,10 +33,11 @@ Cruzeiro do Sul EAD
 - Terraform  
 - VPS com Debian
 
-</div>
+---
 
-</div>
+### Idiomas
 
+Português brasileiro (nativo) e inglês intermediário (B1).
 
 ## Habilidades
 
@@ -48,10 +47,6 @@ Java, PHP, Lua, Shell Script, SQL
 ### Frameworks
 
 Spring Boot
-
-### Idiomas
-
-Português brasileiro (nativo) e inglês intermediário (B1).
 
 ### Ferramentas
 Docker, Terraform, Linux (Arch, Debian, Gentoo, Alpine) e Git

@@ -107,28 +107,6 @@ section {
   margin-bottom: 1em;
 }
 
-.formacao-wrapper {
-  display: flex;
-  justify-content: space-between;
-  gap: 1cm;
-  margin-top: 0.4em;
-}
-
-.formacao-col {
-  flex: 1;
-  border: 1px solid var(--border);
-  padding: 10px;
-  background: var(--bg);
-}
-
-.formacao-col h3 {
-  margin-top: 0;
-  color: var(--navy);
-  font-style: normal;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 3px;
-}
-
 hr {
   border: none;
   border-top: 1px solid var(--navy);
