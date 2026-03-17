@@ -2,6 +2,8 @@
 
 Gerador de currículos com pandoc
 
+![exemplo](./exemplo.png)
+
 ## Dependências
 
 - pandoc
@@ -47,3 +49,4 @@ curriculo/
 └── output/
     └── curriculo-*.pdf
 ```
+
