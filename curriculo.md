@@ -1,18 +1,17 @@
 # Pablo Moura
-## Programador e DevOps
+## Programador
 
 > <span class="icon"> </span> **GitHub:** [https://github.com/sup4man12](https://github.com/sup4man12)  
 > <span class="icon"> </span> **Email:** [sup4man12345@proton.me](mailto:sup4man12345@proton.me)  
-> <span class="icon"> </span> **LinkedIn:** [https://linkedin.com/in/pablo.moura](https://linkedin.com/in/pablo.moura)  
-> <span class="icon"> </span> **Telefone:** 11 93917-9889
+> <span class="icon"> </span> **Telefone:** 11 93917-9880  
+> <span class="icon"> </span> **Telefone secundário:** 11 96541-6867   
+> <span class="icon"> </span> **LinkedIn:** [pablo-moura-41b63b248](https://linkedin.com/in/pablo-moura-41b63b248/)
 
 ---
 
 ## Resumo
 
-Profissional focado em DevOps, com experiência em ambientes Linux, automação, infraestrutura como código e pipelines de integração e entrega contínua.
-
----
+Programador com experiência em ambientes Linux, servidores e desenvolvimento de aplicações.
 
 ## Formação
 
@@ -21,8 +20,9 @@ Profissional focado em DevOps, com experiência em ambientes Linux, automação,
 <div class="formacao-col">
 
 ### Formação Acadêmica
-**Ensino Médio Concluído (2021)**  
-Escola Bartolomeu de Carlos
+
+**Cursando faculdade ADS (2026)**  
+Cruzeiro do Sul EAD
 
 </div>
 
@@ -31,7 +31,7 @@ Escola Bartolomeu de Carlos
 ### Cursos Complementares
 - Java  
 - MySQL  
-- Spring Boot 4  
+- Spring Boot  
 - Terraform  
 - VPS com Debian
 
@@ -46,7 +46,12 @@ Escola Bartolomeu de Carlos
 Java, PHP, Lua, Shell Script, SQL
 
 ### Frameworks
+
 Spring Boot
 
+### Idiomas
+
+Português brasileiro (nativo) e inglês intermediário (B1).
+
 ### Ferramentas
-Docker, Terraform
+Docker, Terraform, Linux (Arch, Debian, Gentoo, Alpine) e Git
