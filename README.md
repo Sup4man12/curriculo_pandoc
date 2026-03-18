@@ -25,7 +25,7 @@ Edite o arquivo **curriculo.md** e gere o pdf com o seguinte comando:
 ./gencurriculo.sh
 
 ## Também é possível passar algum tema como parâmetro.
-## Temas disponíveis: dark, clean, dark, modern e curriculo(padrão)
+## Temas disponíveis: dark, clean, classic, modern e curriculo(padrão)
 ./gencurriculo.sh clean
 
 ## Ou ainda, gerar todos
