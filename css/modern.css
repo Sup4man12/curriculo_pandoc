@@ -1,21 +1,8 @@
+@import 'base.css';
 @page {
   margin: 1cm;
 }
 
-@font-face {
-    font-family: 'NerdFont';
-    src: url('fonts/NerdFont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-.icon {
-    font-family: 'NerdFont';
-    font-size: 10pt;
-    vertical-align: middle;
-    margin-right: 0.3em;
-}
 
 /* Paleta Moderna e Colorida */
 :root {

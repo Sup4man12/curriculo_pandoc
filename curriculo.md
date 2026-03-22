@@ -3,8 +3,7 @@
 
 > <span class="icon"> </span> **GitHub:** [https://github.com/sup4man12](https://github.com/sup4man12)  
 > <span class="icon"> </span> **Email:** [sup4man12345@proton.me](mailto:sup4man12345@proton.me)  
-> <span class="icon"> </span> **Telefone:** 11 93917-9880  
-> <span class="icon"> </span> **Telefone secundário:** 11 96541-6867   
+> <span class="icon"> </span> **Telefone:** 11 96541-6867   
 > <span class="icon"> </span> **LinkedIn:** [pablo-moura-41b63b248](https://linkedin.com/in/pablo-moura-41b63b248/)
 
 ---
@@ -14,10 +13,6 @@
 Programador com experiência em ambientes Linux, servidores e desenvolvimento de aplicações.
 
 ## Formação
-
-<div class="formacao-wrapper">
-
-<div class="formacao-col">
 
 ### Formação Acadêmica
 
