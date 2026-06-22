@@ -1,52 +1,51 @@
 #!/bin/bash
 
-TEMPLATE=${1:-curriculo}
+set -e
 
 mkdir -p ./output
 
-if [ "$TEMPLATE" = "all" ]; then
-    TEMPLATES=("curriculo" "clean" "modern" "classic" "dark")
-    echo "Gerando currículos com todos os templates..."
-    echo ""
-    
-    for TEMPLATE_NAME in "${TEMPLATES[@]}"; do
-        CSS_FILE="./css/${TEMPLATE_NAME}.css"
-        
-        if [ ! -f "$CSS_FILE" ]; then
-            echo "⚠ Aviso: Template '$TEMPLATE_NAME' não encontrado, pulando..."
-            continue
-        fi
-        
-        echo "Gerando currículo com template: $TEMPLATE_NAME"
-        pandoc ./curriculo.md -o ./output/curriculo-${TEMPLATE_NAME}.pdf -s --pdf-engine weasyprint -c "$CSS_FILE"
-        
-        if [ $? -eq 0 ]; then
-            echo "✓ Currículo gerado com sucesso: ./output/curriculo-${TEMPLATE_NAME}.pdf"
-        else
-            echo "✗ Erro ao gerar currículo com template: $TEMPLATE_NAME"
-        fi
-        echo ""
-    done
-    
-    echo "Processo concluído!"
-    exit 0
-fi
+CSS_FILE="./css/curriculo.css"
+MD_FILE="./curriculo.md"
+TEMPLATE_FILE="./templates/curriculo.html"
 
-CSS_FILE="./css/${TEMPLATE}.css"
+if [ "$#" -gt 0 ]; then
+    echo "Erro: este projeto possui somente o tema principal (curriculo)."
+    echo "Use: ./gencurriculo.sh"
+    exit 1
+fi
 
 if [ ! -f "$CSS_FILE" ]; then
-    echo "Erro: Template '$TEMPLATE' não encontrado!"
-    echo "Templates disponíveis: curriculo, clean, modern, classic, dark"
-    echo "Use 'all' para gerar todos os temas de uma vez"
+    echo "Erro: tema principal não encontrado em $CSS_FILE"
     exit 1
 fi
 
-echo "Gerando currículo com template: $TEMPLATE"
-pandoc ./curriculo.md -o ./output/curriculo-${TEMPLATE}.pdf -s --pdf-engine weasyprint -c "$CSS_FILE"
-
-if [ $? -eq 0 ]; then
-    echo "✓ Currículo gerado com sucesso: ./output/curriculo-${TEMPLATE}.pdf"
-else
-    echo "✗ Erro ao gerar currículo"
+if [ ! -f "$MD_FILE" ]; then
+    echo "Erro: arquivo $MD_FILE não encontrado"
     exit 1
 fi
+
+if [ ! -f "$TEMPLATE_FILE" ]; then
+    echo "Erro: template $TEMPLATE_FILE não encontrado"
+    exit 1
+fi
+
+H1=$(sed -n 's/^# \{1,\}//p' "$MD_FILE" | head -n 1)
+
+if [ -z "$H1" ]; then
+    echo "Erro: nenhum título H1 encontrado em $MD_FILE"
+    exit 1
+fi
+
+PERSON_NAME=$(printf '%s\n' "$H1" | awk 'NF >= 2 { print tolower($1) "_" tolower($2) }')
+
+if [ -z "$PERSON_NAME" ]; then
+    echo "Erro: o H1 precisa conter pelo menos duas palavras"
+    exit 1
+fi
+
+OUTPUT_FILE="./output/curriculo_${PERSON_NAME}.pdf"
+
+echo "Gerando currículo com o tema principal..."
+pandoc "$MD_FILE" -o "$OUTPUT_FILE" -s --template "$TEMPLATE_FILE" --pdf-engine weasyprint -c "$CSS_FILE"
+
+echo "Currículo gerado com sucesso: $OUTPUT_FILE"

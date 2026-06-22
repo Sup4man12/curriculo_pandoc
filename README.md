@@ -21,30 +21,31 @@ Edite o arquivo **curriculo.md** e gere o pdf com o seguinte comando:
 
 ```sh
 ./gencurriculo.sh
-
-## Também é possível passar algum tema como parâmetro.
-## Temas disponíveis: dark, clean, classic, modern e curriculo(padrão)
-./gencurriculo.sh clean
-
-## Ou ainda, gerar todos
-./gencurriculo.sh all
 ```
 
-Os currículos ficaram localizados no diretório **output**
+O projeto usa somente o tema principal, localizado em **css/curriculo.css**.
+O HTML intermediário usa o template **templates/curriculo.html** para manter o PDF livre do CSS padrão do Pandoc.
+
+O currículo gerado ficará localizado no diretório **output** com o formato:
+
+```txt
+curriculo_primeiro_segundo.pdf
+```
+
+O nome é puxado das duas primeiras palavras do primeiro título H1 (`#`) do arquivo **curriculo.md** e convertido para minúsculas. Por exemplo, `# Pablo Moura` gera **output/curriculo_pablo_moura.pdf**.
 
 ## Estrutura de arquivos
 
 ```
 curriculo/
 ├── css/
-│   ├── curriculo.css  (padrão)
-│   ├── clean.css
-│   ├── modern.css
-│   ├── classic.css
-│   └── dark.css
+│   ├── base.css
+│   ├── curriculo.css
+│   └── fonts/
 ├── curriculo.md
 ├── gencurriculo.sh
+├── templates/
+│   └── curriculo.html
 └── output/
-    └── curriculo-*.pdf
+    └── curriculo_primeiro_segundo.pdf
 ```
-

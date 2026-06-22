@@ -12,7 +12,7 @@
 
 Programador com experiência em ambientes Linux, servidores e desenvolvimento de aplicações.
 
-## Formação
+## Educação
 
 ### Formação Acadêmica
 
