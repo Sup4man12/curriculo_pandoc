@@ -2,7 +2,7 @@
 
 Gerador de currículos com pandoc
 
-[Ilustração de modelo e output](./exemplo.png)
+![Ilustração de modelo e output](./exemplo.png)
 
 ## Dependências
 
