@@ -25,9 +25,6 @@ Edite o arquivo **curriculo.md** e gere o pdf com o seguinte comando:
 ./gencurriculo.sh
 ```
 
-O projeto usa somente o tema principal, localizado em **css/curriculo.css**.
-O HTML intermediário usa o template **templates/curriculo.html** para manter o PDF livre do CSS padrão do Pandoc.
-
 O currículo gerado ficará localizado no diretório **output** com o formato:
 
 ```txt
@@ -48,6 +45,12 @@ curriculo/
 ├── gencurriculo.sh
 ├── templates/
 │   └── curriculo.html
+├── exemplo.png
 └── output/
     └── curriculo_primeiro_segundo.pdf
 ```
+
+## TO-DO
+
+- [ ] Adicionar suporte a Docker
+- [ ] Adicionar suporte ao Windows
