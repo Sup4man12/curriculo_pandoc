@@ -1,47 +1,53 @@
-# Pablo Moura
-## Programador
+# Nome Completo
+## Cargo / Área de Atuação
 
-> <span class="icon"> </span> **GitHub:** [https://github.com/sup4man12](https://github.com/sup4man12)  
-> <span class="icon"> </span> **Email:** [sup4man12345@proton.me](mailto:sup4man12345@proton.me)  
-> <span class="icon"> </span> **Telefone:** 11 96541-6867   
-> <span class="icon"> </span> **LinkedIn:** [pablo-moura-41b63b248](https://linkedin.com/in/pablo-moura-41b63b248/)
+> GitHub: [url]  
+> Email: [email]  
+> Telefone: [telefone]  
+> LinkedIn: [url]
 
 ---
 
 ## Resumo
 
-Programador com experiência em ambientes Linux, servidores e desenvolvimento de aplicações.
+[Resumo profissional]
+
+## Experiência
+
+### Cargo
+**Empresa · Período**
+
+- Responsabilidade ou realização
+- Responsabilidade ou realização
+- Responsabilidade ou realização
 
 ## Educação
 
 ### Formação Acadêmica
 
-**Cursando faculdade ADS (2026)**  
-Cruzeiro do Sul EAD
-
----
+**Curso (ano)**  
+Instituição
 
 ### Cursos Complementares
-- Java  
-- MySQL  
-- Spring Boot  
-- Terraform  
-- VPS com Debian
 
----
-
-### Idiomas
-
-Português brasileiro (nativo) e inglês intermediário (B1).
+- Curso
+- Curso
+- Curso
 
 ## Habilidades
 
 ### Linguagens
-Java, PHP, Lua, Shell Script, SQL
+
+Linguagem, Linguagem, Linguagem
 
 ### Frameworks
 
-Spring Boot
+Framework, Framework
 
 ### Ferramentas
-Docker, Terraform, Linux (Arch, Debian, Gentoo, Alpine) e Git
+
+Ferramenta, Ferramenta, Ferramenta
+
+## Idiomas
+
+Idioma (nível), Idioma (nível)

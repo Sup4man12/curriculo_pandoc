@@ -2,6 +2,8 @@
 
 Gerador de currículos com pandoc
 
+[Ilustração de modelo e output](./exemplo.png)
+
 ## Dependências
 
 - pandoc
