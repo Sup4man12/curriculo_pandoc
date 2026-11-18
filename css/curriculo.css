@@ -1,62 +1,58 @@
+/* Tema: curriculo — padrão. Sans-serif, detalhes em azul, seções com linha. */
 @import 'base.css';
+
 @page {
-  margin: 1.6cm;
-}
-:root {
-  --accent: #3a6ea5;
-  --accent-light: #e8f0fa;
-  --dark: #1f2a35;
+  size: A4;
+  margin: 1.4cm 1.6cm;
 }
 
-h1, h2, h3 {
-  font-weight: 600;
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
-  letter-spacing: 0.2px;
+:root {
+  --accent: #2b5b8a;
+  --text: #1f2a35;
+  --muted: #4f5b66;
+  --rule: #b8c7d6;
 }
+
+html { font-size: 10.5pt; }
 
 h1 {
-  font-size: 22pt; 
-  text-transform: uppercase;
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 4px;
-  color: var(--dark);
+  color: var(--text);
+  letter-spacing: 0.02em;
 }
 
-h2 {
-  font-size: 15.5pt;
+h1 + p,
+h1 + h2 {
   color: var(--accent);
+  font-weight: 600;
 }
 
+.contato,
+h1 ~ blockquote:first-of-type {
+  padding-bottom: 0.45em;
+  border-bottom: 2px solid var(--accent);
+}
+
+/* Títulos de seção */
+h2 {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 1.08rem;
+  padding-bottom: 0.15em;
+  border-bottom: 1px solid var(--rule);
+}
+
+/* Cargo, curso, projeto */
 h3 {
-  font-size: 13pt; 
-  color: #333;
+  color: var(--text);
 }
 
-p, li {
-  margin: 0.18em 0;
+/* O separador --- vira só um respiro entre seções. */
+hr {
+  border-top-color: transparent;
+  margin: 0.2em 0;
 }
 
-ul {
-  padding-left: 16px;
-  margin-top: 0.2em;
-}
-
-blockquote {
-  padding: 5px 10px;
-  margin: 0.4em 0 0.8em 0;
-  border-left: 3px solid var(--accent);
-  background: var(--accent-light);
-  font-size: 10.5pt;
-  line-height: 1.4;
-}
-
-blockquote a {
-    color: inherit;
-    text-decoration: none;
-    display: inline;
-}
-
-section {
-  margin-bottom: 0.8em;
+li::marker {
+  color: var(--accent);
 }

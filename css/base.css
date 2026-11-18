@@ -1,15 +1,173 @@
+/*
+ * base.css — fundação compartilhada por todos os temas.
+ *
+ * Objetivos:
+ *   1. Legibilidade por ATS (sistemas de triagem de currículos): texto real,
+ *      sem ligaduras, sem hifenização, layout de coluna única e ordem de
+ *      leitura igual à ordem do Markdown.
+ *   2. Caber em uma página A4: tamanhos em rem/em, para que o script
+ *      (gencurriculo.sh --ajustar) consiga reduzir tudo proporcionalmente
+ *      alterando apenas o font-size do <html>.
+ *
+ * Cada tema importa este arquivo e define as variáveis abaixo.
+ */
 
 @font-face {
-    font-family: 'NerdFont';
-    src: url('fonts/NerdFont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'NerdFont';
+  src: url('fonts/NerdFont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
+:root {
+  /* Fontes "métricas-compatíveis": Liberation Sans/Serif têm as mesmas
+     medidas de Arial/Times New Roman, então o currículo ocupa o mesmo
+     espaço no Linux, no Windows e no Docker. */
+  --font-sans: 'Liberation Sans', Arial, Helvetica, 'Noto Sans', 'DejaVu Sans', sans-serif;
+  --font-serif: 'Liberation Serif', 'Times New Roman', Times, 'Noto Serif', 'DejaVu Serif', serif;
+
+  --font-body: var(--font-sans);
+  --font-heading: var(--font-body);
+
+  --text: #1f2328;
+  --muted: #57606a;
+  --accent: #2b5b8a;
+  --rule: #c9d1d9;
+}
+
+/* Tamanho base: tudo abaixo é relativo a ele (rem/em). */
+html {
+  font-size: 10.5pt;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.35;
+  color: var(--text);
+  /* ATS: palavras quebradas com hífen viram duas palavras ("Desen- volvedor")
+     e ligaduras (fi, fl) podem ser extraídas como um único caractere. */
+  hyphens: manual;
+  font-variant-ligatures: none;
+  text-align: left;
+  orphans: 2;
+  widows: 2;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+h1 { font-size: 2rem; margin: 0 0 0.1em; }
+h2 { font-size: 1.2rem; margin: 0.9em 0 0.35em; }
+h3 { font-size: 1.02rem; margin: 0.6em 0 0.1em; }
+h4 { font-size: 1rem; margin: 0.4em 0 0.1em; }
+
+p {
+  margin: 0.2em 0;
+}
+
+ul, ol {
+  margin: 0.2em 0 0.3em;
+  padding-left: 1.2em;
+}
+
+li {
+  margin: 0.08em 0;
+  break-inside: avoid;
+}
+
+li > p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 700;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 0.6em 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* --- Cabeçalho -------------------------------------------------------- */
+
+/* Cargo: primeiro parágrafo logo após o nome (formato recomendado) ou um
+   H2 logo após o H1 (formato antigo, mantido por compatibilidade). */
+h1 + p,
+h1 + h2 {
+  font-size: 1.15rem;
+  font-weight: 400;
+  margin: 0 0 0.3em;
+  padding: 0;
+  border: 0;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--muted);
+}
+
+/* Contatos: bloco ::: contato ::: (recomendado) ou citação > (formato antigo). */
+.contato,
+h1 ~ blockquote:first-of-type {
+  margin: 0.2em 0 0.6em;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 0.92rem;
+  color: var(--text);
+}
+
+.contato p,
+h1 ~ blockquote:first-of-type p {
+  margin: 0;
+}
+
+/* Linha de data/local logo após um cargo ou curso: *01/2023 – Atual | SP* */
+h3 + p > em:only-child,
+.periodo {
+  font-style: normal;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+/* Mantém título de cargo/curso junto da primeira linha de conteúdo. */
+h3 + p,
+h3 + ul {
+  break-before: avoid;
+  page-break-before: avoid;
+}
+
+/* --- Ícones (opcional) ------------------------------------------------- */
+/* Atenção: ícones de fonte são caracteres da "Private Use Area" do Unicode.
+   O ATS os lê como lixo (ex.: ""). Prefira escrever "Email:", "GitHub:"…  */
 .icon {
-    font-family: 'NerdFont';
-    font-size: 10pt;
-    vertical-align: middle;
-    margin-right: 0.2em;
+  font-family: 'NerdFont';
+  font-size: 0.95em;
+  margin-right: 0.25em;
+}
+
+/* Use ::: quebra-pagina ::: para forçar uma nova página (multi-página). */
+.quebra-pagina {
+  break-before: page;
+  page-break-before: always;
 }

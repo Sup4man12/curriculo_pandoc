@@ -1,0 +1,50 @@
+/* Tema: minimalista — sem cores, máxima compatibilidade com ATS e impressão. */
+@import 'base.css';
+
+@page {
+  size: A4;
+  margin: 1.5cm 1.7cm;
+}
+
+:root {
+  --text: #000000;
+  --muted: #333333;
+  --rule: #000000;
+}
+
+html { font-size: 10.5pt; }
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+h1 + p,
+h1 + h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.contato,
+h1 ~ blockquote:first-of-type {
+  margin-bottom: 0.4em;
+}
+
+h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.05em;
+  margin-top: 0.8em;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+hr {
+  border-top-color: transparent;
+  margin: 0.1em 0;
+}
