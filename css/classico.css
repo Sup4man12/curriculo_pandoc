@@ -1,0 +1,65 @@
+/* Tema: classico — serifado, cabeçalho centralizado, preto e branco. */
+@import 'base.css';
+
+@page {
+  size: A4;
+  margin: 1.5cm 1.8cm;
+}
+
+:root {
+  --font-body: var(--font-serif);
+  --text: #111111;
+  --muted: #444444;
+  --rule: #111111;
+}
+
+html { font-size: 11pt; }
+
+body {
+  line-height: 1.3;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1 + p,
+h1 + h2 {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.contato,
+h1 ~ blockquote:first-of-type {
+  text-align: center;
+  padding-bottom: 0.5em;
+  border-bottom: 1.5px solid var(--rule);
+}
+
+h2 {
+  font-variant: small-caps;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-size: 1.2rem;
+  border-bottom: 0.5px solid var(--rule);
+  padding-bottom: 0.1em;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+h3 + p > em:only-child,
+.periodo {
+  font-style: italic;
+}
+
+hr {
+  border-top-color: transparent;
+  margin: 0.2em 0;
+}

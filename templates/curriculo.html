@@ -1,8 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="$if(lang)$$lang$$else$pt-BR$endif$">
 <head>
   <meta charset="utf-8" />
-  <title>$pagetitle$</title>
+  <meta name="generator" content="curriculo_pandoc (pandoc + weasyprint)" />
+  <!-- Metadados viram propriedades do PDF (Título, Autor, Assunto, Palavras-chave). -->
+  <title>$if(title)$$title$$else$$pagetitle$$endif$</title>
+$if(author)$
+  <meta name="author" content="$for(author)$$author$$sep$, $endfor$" />
+$elseif(nome)$
+  <meta name="author" content="$nome$" />
+$endif$
+$if(description)$
+  <meta name="description" content="$description$" />
+$endif$
+$if(keywords)$
+  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+$endif$
 $for(css)$
   <link rel="stylesheet" href="$css$" />
 $endfor$
