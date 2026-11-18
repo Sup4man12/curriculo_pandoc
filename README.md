@@ -6,6 +6,8 @@ Você escreve o currículo em um arquivo de texto simples (`curriculo.md`), esco
 e o script gera um PDF **de uma página**, **legível por ATS** (os sistemas que fazem a
 triagem automática de currículos) e com metadados preenchidos.
 
+![Ilustração de modelo e output](./exemplo.png)
+
 ## Recursos
 
 - **5 temas** prontos (CSS), fáceis de copiar e personalizar.
